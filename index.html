@@ -1,52 +1,301 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Anurag Jadhav | Digital Marketer</title>
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Rivera — Digital Marketing Strategist</title>
+<meta name="description" content="Digital marketing strategist specializing in SEO audits, Meta Ads, competitor analysis, and market research.">
 
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
 <body>
 
-<h1>Anurag Jadhav</h1>
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">AR<span class="dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#results">Results</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#contact" class="nav-cta">Let's talk</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
-<h2>Digital Marketing Portfolio</h2>
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">[ DIGITAL MARKETING STRATEGIST ]</p>
+      <h1>Turning traffic<br>into trend lines.</h1>
+      <p class="hero-sub">I audit, test, and optimize digital growth — SEO audits, Meta Ads management, competitor intelligence, and market research that turn data into decisions.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Start a project</a>
+        <a href="#services" class="btn btn-ghost">View services</a>
+      </div>
+    </div>
 
-<p>BBA Marketing Student</p>
+    <div class="hero-chart">
+      <svg viewBox="0 0 480 320" class="chart-svg" role="img" aria-label="Upward performance trend chart">
+        <defs>
+          <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#22C55E" stop-opacity="0.35"/>
+            <stop offset="100%" stop-color="#22C55E" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <!-- grid -->
+        <g class="chart-gridlines" stroke="#1E3A5F" stroke-width="1">
+          <line x1="0" y1="60" x2="480" y2="60"/>
+          <line x1="0" y1="130" x2="480" y2="130"/>
+          <line x1="0" y1="200" x2="480" y2="200"/>
+          <line x1="0" y1="270" x2="480" y2="270"/>
+        </g>
+        <path class="chart-area" d="M0,260 L60,235 L120,245 L180,190 L240,205 L300,140 L360,110 L420,70 L480,40 L480,320 L0,320 Z" fill="url(#areaFill)"/>
+        <path class="chart-line" d="M0,260 L60,235 L120,245 L180,190 L240,205 L300,140 L360,110 L420,70 L480,40" fill="none" stroke="#22C55E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle class="chart-dot" cx="480" cy="40" r="6" fill="#22C55E"/>
+      </svg>
 
-<p>SEO | Google Ads | Meta Ads | Analytics</p>
+      <div class="chip chip-1">
+        <span class="chip-label">ROAS</span>
+        <span class="chip-value" data-count="4.8" data-suffix="x">0x</span>
+      </div>
+      <div class="chip chip-2">
+        <span class="chip-label">CTR LIFT</span>
+        <span class="chip-value" data-count="142" data-suffix="%">0%</span>
+      </div>
+      <div class="chip chip-3">
+        <span class="chip-label">ORGANIC TRAFFIC</span>
+        <span class="chip-value" data-count="230" data-suffix="%">0%</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-<hr>
+<!-- ============ ABOUT / STATS STRIP ============ -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="about-copy">
+      <p class="section-eyebrow">ABOUT</p>
+      <h2>I read dashboards the way most people read headlines.</h2>
+      <p>I'm Alex Rivera, a digital marketing strategist who partners with brands, founders, and agencies to find where growth is being left on the table — then builds the audit, campaign, or research to capture it. <strong>Replace this paragraph with your real bio, years of experience, and industries you've worked in.</strong></p>
+    </div>
+    <div class="stat-ticker">
+      <div class="stat"><span class="stat-num" data-count="60">0</span><span class="stat-label">Campaigns managed</span></div>
+      <div class="stat"><span class="stat-num" data-count="35">0</span><span class="stat-label">SEO audits delivered</span></div>
+      <div class="stat"><span class="stat-num" data-count="12">0</span><span class="stat-label">Industries served</span></div>
+      <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label">Years experience</span></div>
+    </div>
+  </div>
+</section>
 
-<h3>About Me</h3>
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="section-head">
+    <p class="section-eyebrow">WHAT I DO</p>
+    <h2>Four ways I move the needle.</h2>
+  </div>
 
-<p>
-I'm a Digital Marketing enthusiast specializing in SEO,
-Google Ads, Marketing Research and Analytics.
-</p>
+  <div class="service-grid">
+    <article class="service-card reveal">
+      <span class="service-tag">[ SEO ]</span>
+      <h3>SEO Audits</h3>
+      <p>Full technical, on-page, and content audits that surface exactly what's capping your organic growth — and a prioritized fix list your team can act on this week.</p>
+      <ul>
+        <li>Technical crawl &amp; indexation review</li>
+        <li>Keyword gap &amp; content audit</li>
+        <li>Backlink profile health check</li>
+        <li>Prioritized action roadmap</li>
+      </ul>
+    </article>
 
-<hr>
+    <article class="service-card reveal">
+      <span class="service-tag">[ META ]</span>
+      <h3>Meta Ads</h3>
+      <p>End-to-end Facebook &amp; Instagram ad management — from account structure and creative testing to bid strategy and pixel/CAPI setup that protects your data.</p>
+      <ul>
+        <li>Campaign architecture &amp; setup</li>
+        <li>Creative &amp; audience testing</li>
+        <li>Budget scaling &amp; bid strategy</li>
+        <li>Weekly performance reporting</li>
+      </ul>
+    </article>
 
-<h3>Projects</h3>
+    <article class="service-card reveal">
+      <span class="service-tag">[ COMP ]</span>
+      <h3>Competitor Analysis</h3>
+      <p>A clear-eyed map of who you're really up against — their channels, spend, messaging, and gaps — so your strategy is built on evidence, not guesswork.</p>
+      <ul>
+        <li>Channel &amp; share-of-voice mapping</li>
+        <li>Ad creative &amp; messaging teardown</li>
+        <li>Pricing &amp; positioning comparison</li>
+        <li>Opportunity gap report</li>
+      </ul>
+    </article>
 
-<ul>
+    <article class="service-card reveal">
+      <span class="service-tag">[ MKT ]</span>
+      <h3>Market Research</h3>
+      <p>Primary and secondary research that answers the question behind the question — sizing demand, testing messaging, and validating who to target first.</p>
+      <ul>
+        <li>TAM / SAM / SOM sizing</li>
+        <li>Customer surveys &amp; interviews</li>
+        <li>Trend &amp; demand analysis</li>
+        <li>Persona &amp; segmentation report</li>
+      </ul>
+    </article>
+  </div>
+</section>
 
-<li>SEO Audit - Starbucks</li>
+<!-- ============ PROCESS ============ -->
+<section class="process" id="process">
+  <div class="section-head light">
+    <p class="section-eyebrow">HOW I WORK</p>
+    <h2>A repeatable process, not a black box.</h2>
+  </div>
+  <div class="process-track">
+    <div class="process-step reveal">
+      <span class="step-index">01</span>
+      <h4>Audit</h4>
+      <p>Pull the data, run the crawl, review the accounts. Find out what's actually happening before touching anything.</p>
+    </div>
+    <div class="process-step reveal">
+      <span class="step-index">02</span>
+      <h4>Strategy</h4>
+      <p>Translate findings into a prioritized plan — what to fix first, what to test, and what to leave alone.</p>
+    </div>
+    <div class="process-step reveal">
+      <span class="step-index">03</span>
+      <h4>Execute</h4>
+      <p>Ship the campaigns, publish the fixes, launch the tests. Nothing stays a slide deck.</p>
+    </div>
+    <div class="process-step reveal">
+      <span class="step-index">04</span>
+      <h4>Report</h4>
+      <p>Plain-language reporting tied to business outcomes — not vanity metrics.</p>
+    </div>
+  </div>
+</section>
 
-<li>Meta Ads Case Study</li>
+<!-- ============ RESULTS / CASE STUDIES ============ -->
+<section class="results" id="results">
+  <div class="section-head">
+    <p class="section-eyebrow">RESULTS</p>
+    <h2>Case studies <span class="muted">(swap in your real ones)</span></h2>
+  </div>
+  <div class="case-grid">
+    <article class="case-card reveal">
+      <p class="case-client">Placeholder — E-commerce brand</p>
+      <h3>Organic traffic +230% in 6 months</h3>
+      <p class="case-desc">Describe the challenge, what you audited or ran, and the outcome. Keep it to 2–3 sentences with a hard number.</p>
+      <div class="case-bar"><div class="case-bar-fill" style="--val:82%"></div></div>
+    </article>
+    <article class="case-card reveal">
+      <p class="case-client">Placeholder — SaaS startup</p>
+      <h3>ROAS improved from 1.6x to 4.8x</h3>
+      <p class="case-desc">Describe the Meta Ads restructure, creative testing approach, and the budget scaling outcome.</p>
+      <div class="case-bar"><div class="case-bar-fill" style="--val:70%"></div></div>
+    </article>
+    <article class="case-card reveal">
+      <p class="case-client">Placeholder — B2B services firm</p>
+      <h3>Identified $1.2M opportunity gap</h3>
+      <p class="case-desc">Describe the market research or competitor analysis engagement and the decision it informed.</p>
+      <div class="case-bar"><div class="case-bar-fill" style="--val:60%"></div></div>
+    </article>
+  </div>
+</section>
 
-<li>Competitor Analysis</li>
+<!-- ============ TOOLKIT ============ -->
+<section class="toolkit" id="toolkit">
+  <div class="section-head light">
+    <p class="section-eyebrow">TOOLKIT</p>
+    <h2>Platforms &amp; tools I run daily.</h2>
+  </div>
+  <div class="tool-chips">
+    <span>Google Analytics 4</span>
+    <span>Google Search Console</span>
+    <span>Meta Ads Manager</span>
+    <span>Google Ads</span>
+    <span>SEMrush</span>
+    <span>Ahrefs</span>
+    <span>HubSpot</span>
+    <span>Screaming Frog</span>
+    <span>Looker Studio</span>
+    <span>Hotjar</span>
+  </div>
+</section>
 
-<li>Marketing Research</li>
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials" id="testimonials">
+  <div class="section-head">
+    <p class="section-eyebrow">WHAT CLIENTS SAY</p>
+    <h2>Testimonials <span class="muted">(placeholder)</span></h2>
+  </div>
+  <div class="quote-grid">
+    <blockquote class="quote-card reveal">
+      <p>"Replace this with a real quote from a client about the specific result you drove for them."</p>
+      <footer>— Name, Title at Company</footer>
+    </blockquote>
+    <blockquote class="quote-card reveal">
+      <p>"A second placeholder testimonial. Keep it short, specific, and outcome-focused."</p>
+      <footer>— Name, Title at Company</footer>
+    </blockquote>
+  </div>
+</section>
 
-</ul>
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div>
+      <p class="section-eyebrow">GET IN TOUCH</p>
+      <h2>Have a growth problem worth solving?</h2>
+      <p class="contact-sub">Tell me about your business and what's not working. I'll reply within 1–2 business days.</p>
+      <div class="contact-links">
+        <a href="mailto:hello@example.com">hello@example.com</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://calendly.com/yourlink" target="_blank" rel="noopener">Book a call</a>
+      </div>
+    </div>
 
-<hr>
+    <form class="contact-form" id="contactForm">
+      <label>Name
+        <input type="text" name="name" required>
+      </label>
+      <label>Email
+        <input type="email" name="email" required>
+      </label>
+      <label>What do you need help with?
+        <select name="service">
+          <option>SEO Audit</option>
+          <option>Meta Ads</option>
+          <option>Competitor Analysis</option>
+          <option>Market Research</option>
+          <option>Something else</option>
+        </select>
+      </label>
+      <label>Message
+        <textarea name="message" rows="4" required></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary">Send message</button>
+      <p class="form-note">Static form — connect to <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a> or similar before going live.</p>
+    </form>
+  </div>
+</section>
 
-<h3>Contact</h3>
+<footer class="footer">
+  <p>© <span id="year"></span> Alex Rivera. Built and hosted on GitHub Pages.</p>
+</footer>
 
-<p>Email:
-your@email.com
-</p>
-
+<script src="js/script.js"></script>
 </body>
-
 </html>
